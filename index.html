@@ -2,7 +2,16 @@
 layout: default
 title: Home page
 ---
-<ul class="mdl-mini-footer__link">
+
+<style>
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<ul>
   {% for post in site.posts %}
     <li>
       <!-- Square card -->
