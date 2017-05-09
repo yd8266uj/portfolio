@@ -6,9 +6,9 @@
 
 .container
   margin: 0 auto
-  width: 100%
-  +respond-to(wide-screens)
-    width: 80%
+  width: 80%
+  +respond-to(handhelds)
+    width: 100%
     
 .flex-list
   display: flex
@@ -19,7 +19,7 @@
   padding: 0
   
 .flex-list > li 
-  flex-basis: 25%
+  flex-basis: 30%
   flex-grow: 1
   padding: 16px
   +respond-to(medium-screens)
@@ -27,13 +27,6 @@
   +respond-to(handhelds)
     width: 100%
   
-.flex-list > li:nth-of-type(5n-2)
-  flex-basis: 50%
-  +respond-to(medium-screens)
-    flex-basis: 100%
-  +respond-to(handhelds)
-    flex-basis: 100%
-    
 .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type
   padding-right: 0
     
