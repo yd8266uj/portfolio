@@ -7,8 +7,12 @@
 .section
   min-height: 50vh
   
-.section--full
-  min-height: 100vh
+.section--float
+  position: relative
+  
+.section--float > div
+  position: absolute
+  transform: translateY(50%)
 
 .container
   margin: 0 auto
