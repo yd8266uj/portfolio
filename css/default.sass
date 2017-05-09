@@ -8,15 +8,17 @@
   min-height: 50vh
   position: relative
    
-.card--profile
-  position: absolute
-  transform: translateY(50%)
+
 
 .container
   margin: 0 auto
   width: 80%
   +respond-to(handhelds)
     width: 100%   
+    
+.container--detached  
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
     
 .mdl-card
   width: initial
