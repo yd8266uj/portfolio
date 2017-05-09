@@ -2,16 +2,17 @@
 layout: default
 title: Home page
 ---
-<div class="container">  
-  <section>
-  </section>
-  <section>
-  </section>
-  <section>
+
+<section>
+</section>
+<section>
+</section>
+<section>
+  <div class="container"> 
     <h2>Portfolio<h2>
-    <ul class="mdl-grid">
+    <div class="mdl-grid">
       {% for post in site.posts %}
-      <li class="mdl-cell mdl-cell--4-col">
+      <div class="mdl-cell mdl-cell--4-col">
         <div class="mdl-card mdl-shadow--2dp">
           <div class="mdl-card__title mdl-card--expand">
             <h2 class="mdl-card__title-text">{{ post.title }}</h2>
@@ -25,8 +26,8 @@ title: Home page
             </a>
           </div>
         </div>
-      </li>
+      </div>
       {% endfor %}
-    </ul>
-  </section>
-</div>
+    </div>
+  </div>
+</section>
