@@ -1,25 +1,22 @@
 ---
 ---
 
-// start content
 @import 'sticky_footer'
-
-$break-small: 320px
-$break-large: 1024px
-
-=respond-to($media)
-  @if $media == handhelds
-    @media only screen and (max-width: $break-small)
-      @content
-  @else if $media == medium-screens
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1)
-      @content
-  @else if $media == wide-screens
-    @media only screen and (min-width: $break-large)
-      @content
+@import 'responsive'
 
 .container
   margin: 0 auto
   width: 100%
   +respond-to(wide-screens)
     width: 80%
+    
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type
+    padding-right: 0
+    
+.demo-card-square.mdl-card
+  width: 320px
+  height: 320px
+
+.demo-card-square > .mdl-card__title
+  color: #fff
+  background: url('../assets/dog.jpg') bottom right 15% no-repeat #46B6AC
