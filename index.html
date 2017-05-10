@@ -5,8 +5,8 @@ title: Home page
 
 <section class="section section--full section--dark">
   <div class="container"> 
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--stretch mdl-cell--4-offset mdl-cell--8-col">
+    <div class="split">
+      <div class="split__side split__side--right">
         <p>Although you can’t directly add front matter values to static files, you can set front matter values through the defaults property in your configuration file. When Jekyll builds the site, it will use the front matter values you set.</p>
       </div>
     </div>
@@ -15,8 +15,8 @@ title: Home page
 
 <section class="section">
   <div class="container container--detached"> 
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--4-col">
+    <div class="split">
+      <div class="split__side split__side--left">
         {% include profile.html %}
       </div>
     </div>
@@ -27,8 +27,8 @@ title: Home page
 </section>
 <section class="section">
   <div class="container"> 
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--stretch mdl-cell--4-offset mdl-cell--8-col">
+    <div class="split">
+      <div class="split__side split__side--right">
         <h2>Portfolio<h2>
         <div class="mdl-grid">
           {% for post in site.posts %}
