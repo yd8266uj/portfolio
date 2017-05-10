@@ -15,12 +15,12 @@
 
 .container
   margin: 0 auto
-  width: 80%
-  +respond-to(handhelds)
-    width: 100%   
+  width: 100%
+  +respond-to(desktop)
+    width: 80%   
 
-.mdl-cell--float
-  +respond-to(wide-screens)
+.container--float
+  +respond-to(desktop)
     left: 50%
     position: absolute
     transform: translateX(-50%) translateY(-300px)
