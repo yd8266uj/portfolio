@@ -19,22 +19,11 @@
   +respond-to(handhelds)
     width: 100%   
 
-.split 
-  @extend .mdl-grid
-    
-.split__side
-  @extend .mdl-cell
-  
-.split__side--left  
+.mdl-cell--float
   +respond-to(wide-screens)
-    @extend .mdl-cell--4-col
     left: 50%
     position: absolute
     transform: translateX(-50%) translateY(-300px)
-
-.split__side--right
-  +respond-to(wide-screens)    
-    @extend .mdl-cell--4-offset, .mdl-cell--8-col
   
 .mdl-card
   width: initial
